@@ -7,6 +7,9 @@ Instructions on how to Dockerize a simple Sinatra application
   - [Build the docker image](#build-the-docker-image)
     - [Create the Dockerfile](#create-the-dockerfile)
     - [Build and run the container](#build-and-run-the-container)
+  - [Some useful commands](#Some-useful-commands)
+      - [Docker image](#Docker-image)
+      - [Docker container](#Docker-container)
 
 ## Build the docker image
 
@@ -77,4 +80,34 @@ Go to http://localhost:4567/ to see it running.
 Run the following command to see a list of running containers
 ```sh
 $ docker ps
+```
+
+## Some useful commands
+
+### Docker image
+
+List all images created
+
+```sh
+$ docker image ls
+```
+
+Remove one or more images
+
+```sh
+$ docker image rm [imageName]
+```
+
+Pull an image from Docker Hub
+
+```sh
+$ docker image pull [imageName]
+```
+
+### Docker container
+
+Pull a docker image as a container. 
+
+```sh
+$ docker container run [imageName]
 ```
