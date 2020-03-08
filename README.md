@@ -4,8 +4,6 @@ Instructions on how to Dockerize a simple Sinatra application
 
 ## Table of Contents
 
-- [Demo Sinatra Dockerize](#demo-sinatra-dockerize)
-  - [Table of Contents](#table-of-contents)
   - [Build the docker image](#build-the-docker-image)
     - [Create the Dockerfile](#create-the-dockerfile)
     - [Build and run the container](#build-and-run-the-container)
@@ -75,3 +73,8 @@ Now that we have our image, let’s run it!
 $ docker run -p 4567:4567 demo-sinatra-dockerize
 ```
 Go to http://localhost:4567/ to see it running.
+
+Run the following command to see a list of running containers
+```sh
+$ docker ps
+```
