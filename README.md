@@ -28,18 +28,18 @@ Docker provides [official Ruby images](https://github.com/docker-library/ruby/tr
 Open Dockerfile and add the following lines:
 
 ```ruby
-# creates a layer from the Ruby 2.6.5 Docker image
+# create a layer from the Ruby 2.6.5 Docker image
 FROM ruby:2.6.5-stretch
 
 # install the GNU C compiler and GNU C++ compiler
 RUN apt-get update -qq && apt-get install -y build-essential
 
-# setup the directory for the build context
+# set up the directory for the build context
 ENV APP_HOME /demo-sinatra-dockerize
 RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
-#adds files from current directory
+#add files from current directory
 ADD Gemfile* $APP_HOME/
 RUN bundle install --without development test
 
