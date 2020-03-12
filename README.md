@@ -47,7 +47,7 @@ ADD . $APP_HOME
 
 EXPOSE 4567
 
-CMD ["ruby", "app.rb"]
+CMD ["bundle", "exec", "rackup", "--host", "0.0.0.0", "-p", "4567"]
 ```
 
 For deployment purposes, we include the RUN bundle install --without development test line, as we don't need our development dependencies for that.
