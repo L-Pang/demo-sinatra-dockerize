@@ -65,7 +65,7 @@ $ docker images
 Run the build command to build the image with the dockerfile.  
 
 ```sh
-$ docker build . -t demo-sinatra-dockernize
+$ docker build . -t demo-sinatra-dockerize
 ```
 
 Whenenver you update the dockerfile, you need to run the command.
